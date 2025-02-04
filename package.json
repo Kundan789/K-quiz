@@ -17,4 +17,8 @@
     "production": [">0.2%", "not dead", "not op_mini all"],
     "development": ["last 1 chrome version"]
   }
+  "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build"
+  }
 }
